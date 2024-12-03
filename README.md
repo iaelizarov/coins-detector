@@ -9,6 +9,7 @@ The coins detection application is organized as follows:
 - **Logic Functions:** All core logic for image processing, detection, and database operations is stored in utils.py. This includes functions for saving images, interacting with the database, and performing YOLO-based detections.
 
 - **Database:** A SQLite database (image_detection.db) stores information about uploaded images, detection status, and bounding boxes for detected coins. The database has the following tables:
+  
 Table: `image_info`
 
 | Column Name | Data Type | Description                        |
