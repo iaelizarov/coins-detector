@@ -78,3 +78,7 @@ There is a notebook "coins_test_requests.ipynb" attached that contains all the r
 ## 5. Borderline cases
 
 If a coin is cropped by the border of the image, calculating its mask becomes more challenging. This application accounts for four cases where a coin is cropped by any side of the image. However, performance may degrade if the coin is located in a corner, as it becomes impossible to accurately determine its actual size compared to when it is cropped along a single border.
+
+## 6. Machine Learning Model
+
+For the detection problem I used YoLov8 from ultralytics. The code for train-validation split, training and validatin the model is in folder "notebooks". The whole dataset consists only of ~200 images, that is why I decided to split the data only on train and validation sets without creating additional test sample. 
